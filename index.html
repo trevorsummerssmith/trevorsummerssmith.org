@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>trevor summers smith</title>
+    <style type="text/css">
+     /* reset a few things, taken from
+        normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css
+      */
+     html {
+         line-height: 1.15;
+         -ms-text-size-adjust: 100%;
+         -webkit-text-size-adjust: 100%;
+     }
+     h1 {
+         font-size: 2em;
+         margin: 0.67em 0;
+     }
+     a {   -webkit-text-decoration-skip: objects; }
+     /* end reset */
+     body {
+         margin: 0;
+         padding: 0;
+         background-color: #FF530D;
+     }
+     #photo { width: 100%; }
+     h1 {
+         margin: 0 0 0.8em 0;
+         padding-top: 10px;
+         font-family: sans-serif;
+         font-size: 2.2em;
+         width: 100%;
+         text-align: center;
+     }
+
+     p {
+         font-family: Georgia, serif;
+         font-size: 1.2em;
+         line-height: 2em;
+         color: #fff;
+     }
+
+     span.awesome {
+         color: #FF530D;
+         background-color: #0DFFDA;
+     }
+
+     a {
+         color: #B23704;
+         background-color: #0DFFDA;
+     }
+
+     #page-container {
+         /* color of left side bar when not covered by photo */
+         background-color: #002b36;
+     }
+     #text-container {
+         background-color: #FF530D;
+         overflow: hidden; /* So the float works with the image, see below */
+     }
+
+     /* Photo floats left to a max of 500px. If it gets bigger than that
+        parts of the photo gets hidden and I don't like how it looks.
+        Photo floats left to a min of 400 px. if it's smaller than that
+        the photo becomes a header.
+      */
+     #photo-container {
+         float: left;
+         width: 50%;
+         max-width: 500px;
+         min-width: 400px;
+         overflow: hidden;
+     }
+
+     @media (max-width:640px) {
+         #photo-container {
+             float: none;
+             width: 100%;
+             max-width: 100%;
+         }
+         #page-container { background: none; }
+         h1 { margin-top: 0.8em; }
+     }
+     #non-header-text-container {
+         margin-left: 2em;
+         width: 90%;
+         text-align: left;
+     }
+     p.fleuron {
+         text-align: center;
+         font-size: 1.4em;
+         color: #002b36;
+     }
+     p.c {
+         margin-left: -2em; /* neg(#non-header-text-container.margin-left) */
+         text-align: center;
+     }
+     p.copyright {
+         font-size: 0.8em;
+         font-weight: bold;
+         text-transform: uppercase;
+         font-family: monospace;
+     }
+    </style>
+  </head>
+  <body>
+      <div id="page-container">
+          <div id="photo-container">
+              <img alt="a photo of me with coffee by a wood fire" src="stuff/me_fire3.jpg" id="photo" />
+          </div>
+          <div id="text-container">
+              <h1><span class="awesome">TREVOR SUMMERS SMITH</span></h1>
+              <div id="non-header-text-container">
+                  <p>I believe we should work towards providing all people with the requisites of food, shelter and medicine.
+                      I am interested in meditation, safe spaces for people to connect, and vulnerability.
+                      I wonder how technology can be used to empower people and not centralize power.
+                      I wonder how technology can be used skillfully to aid us, and not hijack our experiences
+                      for profit.
+                  </p>
+                  <p class="fleuron">&#10086;</p>
+                  <p>
+                      <a href="stuff/resume.pdf">My resume</a> and <a href="https://github.com/trevorsummerssmith">software work</a> I have worked on.
+                  </p>
+                  <p>Three books I really like:
+                      <a href="https://www.abhayagiri.org/books/small-boat-great-mountain">Small Boat, Great Mountain</a>,
+                      <a href="https://en.wikipedia.org/wiki/The_Dispossessed">The Dispossessed</a>,
+                      <a href="http://www.drdansiegel.com/books/the_developing_mind/">The Developing Mind</a>.
+                  </p>
+                  <p>
+                      <a href="https://www.knewton.com/resources/blog/knerds/random-lunch/">A piece</a> I wrote about getting random people to eat lunch together.
+                  </p>
+                  <p><a href="http://techblog.arena.io/2016-12-04_Risky_Libraries/">A piece</a> I wrote with a coworker about choosing OCaml as the primary development language.</p>
+                  <p>Let's connect: hello at trevor summers smith.org</p>
+                  <p class="fleuron">&#10086;</p>
+                  <p class="c">namo tassa bhagavato arahato</p>
+                  <p class="c">namo tassa bhagavato arahato</p>
+                  <p class="c">namo tassa bhagavato arahato</p>
+                  <p class="fleuron">&#10086;</p>
+                  <p class="copyright">&#169;2017 Trevor Summers Smith</p>
+              </div>
+          </div>
+      </div>
+  </body>
+</html>
